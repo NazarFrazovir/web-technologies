@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="action_page.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                <h1>Форма для заповнення</h1>
+            </legend>
+            <fieldset>
+                <legend>
+                    Особисті дані
+                </legend>
+                <label for="name">Ім'я</label>
+                <input tabindex="3" type="text" name="name" id="name" placeholder="Введіть ім'я" pattern="[A-Za-z][^0-9]{6,}">
+                <br><br>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Введіть пароль">
+                <br><br>
+                <label for="date">День народження</label>
+                <input type="date" name="date" id="date">
+                <br><br>
+                <label for="photo">Завантажте своє Аудіо</label>
+                <input accept="audio/*"  multiple   type="file" name="file" id="file">
+                <br><br>
+                <div>
+                    <p>Розкажіть про себе:</p>
+                    <textarea name="" id=""></textarea>
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Контакти</legend>
+                <label for="email">Введіть свій Email:</label>
+                <input type="email" name="email" id="email" placeholder="Введіть свій Email" required><br><br>
+                <label for="number">Введіть свій номер:</label>
+                <input type="number" name="number" id="number" placeholder="Введіть свій номер" required>
+            </fieldset>
+            <fieldset>
+                <legend>Загальні дані</legend>
+                <div>
+                    <label for="continent">Континент</label>
+                    <select name="continent" id="continent">
+                        <option value="">Євразія</option>
+                        <option value="">Північна Америка</option>
+                        <option selected value="">Південа Америка</option>
+                        <option value="">Африка</option>
+                        <option value="">Австралія</option>
+                        <option value="">Антарктида </option>
+                    </select>
+                </div>
+                <br><br><br><br>
+                <div>
+                    <label for="language">Знання мов:</label>
+                    <select name="language" id="language" multiple size="3">
+                        <option value="language">Англійська</option>
+                        <option value="language">Українська</option>
+                        <option value="language">Німецька</option>
+                        <option value="language">Французька</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <label for="continent">Громадянство</label>
+                    <select name="continent" id="continent">
+                        <optgroup label="Європа">
+                            <option value="continent">Українське</option>
+                            <option value="continent">Англійське</option>
+                        </optgroup>
+                        <optgroup label="Антарктида">
+                            <option value="continent">Стандарт</option>
+                        </optgroup>
+                        <optgroup label="Азія">
+                            <option value="continent">Турецька</option>
+                            <option value="continent">Японська</option>
+                            <option value="continent">Китайська</option>
+                        </optgroup>
+                    </select>
+                </div>
